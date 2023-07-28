@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="loginApp">
+
+<head>
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="loginController">
+    <h1>Login Page</h1>
+    <form>
+        <label>
+            Username:
+            <input type="text" ng-model="username">
+        </label>
+        <br>
+        <label>
+            Password:
+            <input type="password" ng-model="password">
+        </label>
+        <br>
+        <label>
+            Login As:
+            <select ng-model="userType">
+                <option value="employee">Employee</option>
+                <option value="admin">Admin</option>
+            </select>
+        </label>
+        <br>
+        <button ng-click="login()">Login</button>
+    </form>
+</body>
+
+</html>
